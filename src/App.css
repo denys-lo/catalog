@@ -1,38 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid lightgrey;
+  width: 300px;
+  padding: 10px;
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
   color: white;
+  margin-bottom: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 25px;
+  font-size: 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.status__top {
+  background-color: orange;
+}
+
+.status__promotion {
+  background-color: red;
+}
+
+.card__statuses img {
+  display: block;
+}
+
+.like {
+  width: 25px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.compare {
+  width: 25px;
+  cursor: pointer;
+}
+
+.card__images {
+  height: 220px;
+  cursor: pointer;
+}
+
+.images__item {
+  width: 100%;
+}
+
+.rating {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.rating a {
+  margin-left: 5px;
+  color: grey;
+}
+
+.old__price {
+  color: grey;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.salePrice {
+  color: red;
+  font-size: 20px;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.cart {
+  width: 24px;
+  cursor: pointer;
+}
+
+.status__send {
+  font-size: 12px;
+}
+
+.status__send img {
+  width: 12px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.status__send_ready {
+  color: green;
+}
+
+.status__send_not-ready {
+  color: orange;
 }
